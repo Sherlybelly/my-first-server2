@@ -7,14 +7,23 @@
     <title>My First Server</title>
     <style>
         body {
+            margin: 0;
+           
             font-family: Arial, sans-serif;
-            margin: 20px;
+          
             background-color: #ff0000;
         }
-
+title { 
+            text-align: center;
+            margin-top: 20px;
+        
+            
+        }
         h1 {
+            background-color: #00ff80;
             color: #ffffff;
             text-align: center;
+            
         }
 
         .desc {
@@ -56,6 +65,8 @@
             margin: 0 10px;
             max-width: 30%;
             height: auto;
+            border-radius: 8px;
+            border: 10px solid #ffffff;
         }
 
         .snowflake {
@@ -211,12 +222,50 @@
             font-family: 'Raleway', sans-serif;
             color: #000;
         }
+
+        nav {
+         
+            text-align: center;
+            display: flex;
+            justify-content: center;
+          
+            background-color: #ffffff;
+            
+        }
+
+        nav ul {
+            display: flex;
+            gap: 60px;
+            justify-content: center;
+            padding: 10px;
+            margin: 20px;
+            list-style-type: none;
+             
+        }
+
+        footer{
+            text-align: center;
+            padding: 10px;
+            background-color: #ffffff;
+            color: #000000;
+           margin-top: 20px;
+            bottom: 0;
+            width: 100%;
+        }
+
     </style>
 </head>
 
 <body>
-
-    <h1>My Holiday Traditions</h1>
+<nav>
+        
+    <div class="title"><h1>My Holiday Traditions</h1></div>
+    <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
     <div class="desc">
         <p> During the <span>holidays</span>, I love spending time with my family. We always have a <span>big dinner
                 together and exchange gifts</span>. Well,</span> they bring their own presents and I open them. They
@@ -229,6 +278,10 @@
     </div>
 
     <div class="gallery"><img src="char.jpg"><img src="char.jpg"><img src="char.jpg"></div>
+
+    <footer>
+        <p>© 2024 My Holiday Traditions. All rights reserved.</p>
+    </footer>
 
     <div class="snowflakes" aria-hidden="true">
 
