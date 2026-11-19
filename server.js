@@ -16,9 +16,20 @@ const server = http.createServer(function (req, res) {
                 res.end(data);
             }
         });
+    } else if (req.url.endsWith(".jpg")) {
+        fs.readFile("IMAGES/char.jpg", function (error, data) {
+            if (error) {
+                res.writeHead(500);
+                res.end("Error loading file");
+            } else {
+                res.writeHead(200, { "Content-Type": "image/jpeg" });
+                res.end(data);
+            }
+        });
     } else {
         res.writeHead(404);
         res.end("File not found");
+
     }
 });
 
