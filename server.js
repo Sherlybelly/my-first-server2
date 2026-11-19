@@ -17,7 +17,7 @@ const server = http.createServer(function (req, res) {
             }
         });
     } else if (req.url.endsWith(".jpg")) {
-        fs.readFile("IMAGES/char.jpg", function (error, data) {
+        fs.readFile(req.url.substring(1), function (error, data) {
             if (error) {
                 res.writeHead(500);
                 res.end("Error loading file");
